@@ -1,0 +1,115 @@
+.sinav-oturma-container {
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+select {
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+button {
+    padding: 8px 14px;
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sinav-oturma-output {
+    margin-top: 30px;
+}
+
+.sinav-oturma-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.sinav-oturma-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.sinav-oturma-block {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    min-width: 120px;
+}
+
+.sinav-oturma-seat {
+    background-color: steelblue;
+    color: white;
+    border-radius: 6px;
+    font-size: 12px;
+    text-align: center;
+    height: 60px;
+    width: 70px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.sinav-oturma-seat.bos {
+    background-color: #bbb;
+    color: #555;
+    font-style: italic;
+}
+
+.ogrenci-no {
+    font-size: 11px;
+    color: #ffd;
+}
+
+.sinav-ogrenci-tablosu {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sinav-ogrenci-tablosu th,
+.sinav-ogrenci-tablosu td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.sinav-ogrenci-tablosu th {
+    background-color: #34495e;
+    color: white;
+}
+
+.sinav-oturma-print-btn {
+    margin-top: 20px;
+    background-color: #27ae60;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .sinav-oturma-container,
+    .sinav-oturma-container * {
+        visibility: visible;
+    }
+
+    .sinav-oturma-print-btn {
+        display: none;
+    }
+}

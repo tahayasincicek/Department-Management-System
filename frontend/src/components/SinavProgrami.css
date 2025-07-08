@@ -1,0 +1,192 @@
+.sinavp-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.sinavp-container h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00bcd4;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+/* Form alanı */
+.sinavp-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.sinavp-container input[type="text"],
+.sinavp-container input[type="date"],
+.sinavp-container input[type="time"],
+.sinavp-container select {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 220px;
+    transition: 0.2s;
+}
+
+.sinavp-container input:focus,
+.sinavp-container select:focus {
+    border-color: #00bcd4;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 188, 212, 0.5);
+}
+
+.sinavp-container button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sinavp-container button:hover {
+    background-color: #0097a7;
+}
+
+/* Sınav Tablosu */
+.sinavp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sinavp-table th,
+.sinavp-table td {
+    padding: 14px 12px;
+    border: 1px solid #eee;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sinavp-table th {
+    background-color: #f4f6f8;
+    color: #34495e;
+}
+
+/* Not girişi */
+.sinavp-output {
+    margin-top: 40px;
+}
+
+.not-girisi-container {
+    margin-top: 30px;
+}
+
+.ogrenci-not-listesi table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.ogrenci-not-listesi th,
+.ogrenci-not-listesi td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #eee;
+    font-size: 14px;
+}
+
+.ogrenci-not-listesi input[type="number"] {
+    padding: 8px;
+    width: 70px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+.ogrenci-not-listesi input:focus {
+    border-color: #00bcd4;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 188, 212, 0.5);
+}
+
+.ogrenci-not-listesi button {
+    padding: 8px 16px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ogrenci-not-listesi button:hover {
+    background-color: #219150;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sinavp-container form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sinavp-container input,
+    .sinavp-container select {
+        width: 100%;
+    }
+}
+
+.onay-bildirimi {
+    position: fixed;
+    top: 80px;
+    /* NavBar varsa onun altı */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e6ffed;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeinout 3s forwards;
+}
+
+/* Fade out animasyonu */
+@keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

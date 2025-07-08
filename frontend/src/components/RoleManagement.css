@@ -1,0 +1,96 @@
+.role-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: calc(100vh - 100px);
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.role-container h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.role-container select,
+.role-container button {
+    width: 280px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.role-container select:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+.role-container button {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.role-container button:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+}
+
+.role-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    /* Navbar'dan arta kalan alan */
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.role-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.role-container select,
+.role-container button {
+    width: 320px;
+    padding: 14px 18px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.role-container select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.role-container button {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.role-container button:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+}

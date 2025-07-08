@@ -1,0 +1,50 @@
+.kullanici-ekle-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.kullanici-ekle-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.kullanici-ekle-container label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.kullanici-ekle-container input,
+.kullanici-ekle-container select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.kullanici-ekle-container button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.kullanici-ekle-container button:hover {
+    background-color: #0056b3;
+}
+
+.mesaj {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
