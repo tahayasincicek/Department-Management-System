@@ -127,5 +127,5 @@ Upon completion of the project:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/department-management-system.git
+git clone https://github.com/tahayasincicek/department-management-system.git
 cd department-management-system
